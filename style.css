@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --Gray-blue: hsl(217, 19%, 38%);
+    --Dark-Gr-bl: hsl(217, 19%, 24%);
+    --Dark-blue: hsl(218, 23%, 16%);
+    /* FONTS */
+    font-size: 62.5%; 
+    /* Roughly, 1rem = 10px */
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Dark-blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.outmost-container {
+    height: 35rem;
+    width: 40%;
+    min-width: 37.5rem;
+    background: var(--Dark-Gr-bl);
+    border-radius: 5%;
+    display: grid;
+    
+}
+
+.advice-card {
+    display: grid;
+    flex-flow: column nowrap;
+    place-items: center;
+    grid: max-content 3.2rem / 1fr;
+}
+
+.advice-number {
+    margin-bottom: 2rem;
+    padding: 3.5rem;
+    color: var(--neon-green);
+    letter-spacing: 0.3rem;
+    place-self: center;
+}
+
+.advice-quote {
+    text-align: center;
+    color: var(--light-cyan);
+    padding: 6rem ;
+    font-weight: 800;
+    font-size: 2rem;
+    grid-row: 2/3;
+    margin-top: 2rem;
+}
+
+.divider {
+    padding: 3rem 3rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    place-self: center;
+}
+
+.advice-btn {
+    margin: auto;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: var(--neon-green);
+}
+
+.advice-btn:hover {
+    box-shadow: 0px 0px 30px var(--neon-green);
+}
